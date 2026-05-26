@@ -1,0 +1,36 @@
+project:
+  name: semantic_response_convergence
+  seed: 42
+
+dataset:
+  name: bitext
+  hf_name: bitext/Bitext-customer-support-llm-chatbot-training-dataset
+  split: train
+  max_samples_per_intent: 10
+
+knowledge_base:
+  path: data/kb/customer_support_kb.jsonl
+
+retrieval:
+  top_k: 3
+
+embeddings:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+
+model:
+  provider: local
+  model_name: mistral-instruct
+  temperature: 0.2
+  max_tokens: 256
+
+experiment:
+  conditions:
+    - A1_baseline
+    - A2_system_prompt
+    - A3_rag
+    - A4_system_prompt_rag
+    - A5_system_prompt_rag_memory
+
+logging:
+  output_dir: data/outputs
+  log_dir: data/logs

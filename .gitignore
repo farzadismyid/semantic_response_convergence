@@ -1,0 +1,113 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# VSCode
+# =========================
+.vscode/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+logs/
+data/logs/
+*.log
+
+# =========================
+# Experiment outputs
+# =========================
+data/outputs/
+outputs/
+results/
+reports/
+
+# =========================
+# Embeddings / vector DBs
+# =========================
+*.faiss
+*.index
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# =========================
+# Model weights
+# =========================
+models/
+checkpoints/
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+
+# =========================
+# HuggingFace cache
+# =========================
+.cache/
+huggingface/
+hf_cache/
+~/.cache/huggingface/
+data/
+*.arrow
+*.parquet
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Environment variables
+# =========================
+.env
+
+# =========================
+# Coverage / testing
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Ruff / lint cache
+# =========================
+.ruff_cache/
+
+# =========================
+# Dataset artifacts
+# =========================
+downloads/
+datasets_cache/
+
+# =========================
+# SQLite / local DBs
+# =========================
+*.sqlite
+*.db
