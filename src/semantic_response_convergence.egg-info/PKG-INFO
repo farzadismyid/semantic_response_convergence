@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: semantic-response-convergence
+Version: 0.1.0
+Summary: A modular research framework for measuring semantic response convergence in LLM agents.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: datasets>=2.19.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: sentence-transformers>=3.0.0
+Requires-Dist: faiss-cpu>=1.8.0
+Requires-Dist: scikit-learn>=1.4.0
+Requires-Dist: tqdm>=4.66.0
+
+# Semantic Response Convergence
+
+A modular research framework for studying whether LLM agents compress prompt variation into semantically similar responses.
+
+Initial conditions:
+
+- A1: Baseline LLM
+- A2: System Prompt
+- A3: RAG
+- A4: System Prompt + RAG
+- A5: System Prompt + RAG + Memory
+
+Initial prompt dataset:
+
+- Bitext customer support dataset
+
+Initial retrieval corpus:
+
+- Separate handcrafted customer-support knowledge base
