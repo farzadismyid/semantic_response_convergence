@@ -111,3 +111,10 @@ datasets_cache/
 # =========================
 *.sqlite
 *.db
+
+# =========================
+# Package build artifacts
+# =========================
+*.egg-info/
+dist/
+build/
