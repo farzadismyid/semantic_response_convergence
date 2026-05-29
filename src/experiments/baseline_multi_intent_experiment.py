@@ -15,8 +15,8 @@ from src.utils.experiment_paths import create_experiment_dir
 def main() -> None:
     experiment_dir = create_experiment_dir("baseline_multi_intent")
 
-    max_intents = 8
-    samples_per_intent = 6
+    max_intents = 15
+    samples_per_intent = 20
 
     examples = load_bitext_prompt_examples(
         max_samples_per_intent=samples_per_intent,
