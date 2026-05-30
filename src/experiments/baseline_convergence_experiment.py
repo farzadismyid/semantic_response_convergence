@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.decomposition import PCA
 
 from src.agents.baseline_agent import BaselineAgent
-from src.datasets.bitext_loader import load_bitext_prompt_examples
+from src.data_loaders.bitext_loader import load_bitext_prompt_examples
 from src.embeddings.sentence_transformer_engine import (
     EmbeddingEngine,
 )

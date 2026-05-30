@@ -6,7 +6,7 @@ import pandas as pd
 from tqdm import tqdm
 
 from src.agents.baseline_agent import BaselineAgent
-from src.datasets.bitext_loader import load_bitext_prompt_examples
+from src.data_loaders.bitext_loader import load_bitext_prompt_examples
 from src.embeddings.sentence_transformer_engine import EmbeddingEngine
 from src.evaluation.similarity import semantic_dispersion
 from src.utils.experiment_paths import create_experiment_dir

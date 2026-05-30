@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from src.datasets.bitext_loader import load_bitext_prompt_examples
-from src.datasets.kb_loader import load_kb_documents
+from src.data_loaders.bitext_loader import load_bitext_prompt_examples
+from src.data_loaders.kb_loader import load_kb_documents
 
 
 def main() -> None:
