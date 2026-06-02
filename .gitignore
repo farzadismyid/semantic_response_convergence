@@ -33,6 +33,7 @@ Thumbs.db
 # =========================
 # Logs
 # =========================
+convergence_study/
 logs/
 data/logs/
 *.log
