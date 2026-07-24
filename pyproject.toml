@@ -23,3 +23,9 @@ dependencies = [
 [tool.setuptools]
 package-dir = {"" = "."}
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.ruff]
+line-length = 100
