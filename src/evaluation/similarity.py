@@ -14,3 +14,5 @@ def average_pairwise_similarity(embeddings: np.ndarray) -> float:
     return float(np.mean(upper_triangle))
 
 
+def semantic_dispersion(embeddings: np.ndarray) -> float:
+    return 1.0 - average_pairwise_similarity(embeddings)
